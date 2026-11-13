@@ -1,0 +1,304 @@
+/* sett */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F4F1E8;
+    color: #303B2F;
+}
+
+
+/* hed and nv */
+
+.header {
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F1E8;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #596744;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #303B2F;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #B86F50;
+}
+
+
+/* home */
+
+.home {
+    min-height: 75vh;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.subtitle {
+    color: #B86F50;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.home-content h1 {
+    font-size: 52px;
+    margin-bottom: 18px;
+}
+
+.home-content h2 {
+    font-size: 23px;
+    font-weight: normal;
+    color: #788451;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #596744;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #B86F50;
+}
+
+.home-image img {
+    width: 340px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 180px 180px 20px 20px;
+}
+
+
+/* OTHER PAGES */
+
+.page-section {
+    min-height: 75vh;
+    padding: 80px 10%;
+}
+
+.page-section > h1 {
+    font-size: 42px;
+    margin-bottom: 45px;
+}
+
+
+/* abt */
+
+.about-content {
+    max-width: 750px;
+    background-color: #E9E8DB;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.about-content p {
+    line-height: 2;
+    color: #555;
+}
+
+
+/* slks */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-circle {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background-color: #E9E8DB;
+    border: 2px solid #788451;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #596744;
+    transition: 0.3s;
+}
+
+.skill-circle:hover {
+    background-color: #596744;
+    color: white;
+    transform: translateY(-7px);
+}
+
+
+/* expc */
+
+.experience-container {
+    max-width: 750px;
+    border-left: 2px solid #788451;
+    padding-left: 30px;
+}
+
+.experience-item {
+    margin-bottom: 45px;
+    padding: 25px;
+    background-color: #E9E8DB;
+    border-radius: 12px;
+}
+
+.experience-item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.experience-item h3 {
+    color: #B86F50;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.experience-item p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* proj */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    width: 320px;
+    background-color: #E9E8DB;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 22px;
+}
+
+.project-info h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.project-info p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* foot */
+
+.footer {
+    background-color: #E9E8DB;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer a {
+    color: #596744;
+    text-decoration: none;
+}
+
+
+/* reps */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+.project-card {
+    overflow: hidden;
+}
+
+.project-info {
+    padding: 20px;
+}
